@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="main-container">
+      <header class="header-container">
+        <h1 id="title" class="title">
+          <i class="header-text">Super Car Survey Form</i>
+        </h1>
+        <p id="description">
+          <i class="header-text">Complete the form below</i>
+        </p>
+      </header>
+      <div class="form-container">
+        <form id="survey-form">
+          <div class="input-container">
+            <label id="name-label" for="name">Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="form-control"
+              placeholder="Enter your name"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <label id="email-label" for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              class="form-control"
+              placeholder="Enter your Email"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <label id="number-label" for="number">Age</label>
+            <input
+              type="number"
+              name="age"
+              id="number"
+              min="0"
+              max="99"
+              class="form-control"
+              placeholder="Enter your Age"
+              required
+            />
+          </div>
+          <div class="input-container">
+            <p>Select Your Gender</p>
+            <label>
+              <input
+                name="gender"
+                value="male"
+                type="radio"
+                class="radio"
+                checked
+              />Male</label
+            >
+            <label>
+              <input
+                name="gender"
+                value="female"
+                type="radio"
+                class="radio"
+              />Female</label
+            >
+
+            <label
+              ><input
+                name="gender"
+                value="other"
+                type="radio"
+                class="radio"
+              />Other</label
+            >
+          </div>
+          <div class="input-container">
+            <p>What Current Drivers Licence Do You Hold?</p>
+            <select id="dropdown" class="form-control" required>
+              <option disabled="" selected="" value="">
+                Select current licence
+              </option>
+              <option value="">Select current licence</option>
+              <option value="licence">Learners Drivers Licence</option>
+              <option value="licence">Restricted Drivers Licence</option>
+              <option value="licence">Full Drivers Licence</option>
+            </select>
+          </div>
+
+          <div class="input-container">
+            <p>What Is Your Favorite Super Car?</p>
+            <select
+              id="super-car"
+              name="super-car"
+              class="form-control"
+              required
+            >
+              <option disabled="" selected="" value="">Select super car</option>
+              <option value="Lamborghini">Lamborghini</option>
+              <option value="Ferrari">Ferrari</option>
+              <option value="Aston Martin">Astin Martin</option>
+              <option value="McLaren">McLaren</option>
+              <option value="Porsche">Porsche</option>
+              <option value="Bugatti">Bugatti</option>
+            </select>
+          </div>
+
+          <div class="input-container">
+            <p>
+              Select Your Favorite Super Car Paint Job?
+              <span class="response">(Check all that apply)</span>
+            </p>
+            <label>
+              <input
+                name="checkbox"
+                value="red"
+                type="checkbox"
+                class="checkbox"
+              />
+              Red</label
+            >
+            <br />
+            <label>
+              <input
+                name="checkbox"
+                value="black"
+                type="checkbox"
+                class="checkbox"
+              />
+              Black</label
+            >
+            <br />
+            <label>
+              <input
+                name="checkbox"
+                value="white"
+                type="checkbox"
+                class="checkbox"
+              />
+              White</label
+            >
+            <br />
+            <label>
+              <input
+                name="checkbox"
+                value="purple"
+                type="checkbox"
+                class="checkbox"
+              />
+              Purple</label
+            >
+            <br />
+            <label>
+              <input
+                name="checkbox"
+                value="blue"
+                type="checkbox"
+                class="checkbox"
+              />
+              Blue</label
+            >
+            <br />
+            <label>
+              <input
+                name="checkbox"
+                value="green"
+                type="checkbox"
+                class="checkbox"
+              />
+              Green</label
+            >
+            <br />
+            <label>
+              <input
+                name="checkbox"
+                value="pink"
+                type="checkbox"
+                class="checkbox"
+              />
+              Pink</label
+            >
+            <br />
+            <label>
+              <input
+                name="checkbox"
+                value="yellow"
+                type="checkbox"
+                class="checkbox"
+              />
+              Yellow</label
+            >
+            <br />
+            <label>
+              <input
+                name="checkbox"
+                value="silver"
+                type="checkbox"
+                class="checkbox"
+              />
+              Silver</label
+            >
+            <br />
+            <label>
+              <input
+                name="checkbox"
+                value="maroon"
+                type="checkbox"
+                class="checkbox"
+              />
+              Maroon</label
+            >
+            <br />
+            <label>
+              <input
+                name="checkbox"
+                value="orange"
+                type="checkbox"
+                class="checkbox"
+              />
+              Orange</label
+            >
+          </div>
+
+          <div class="input-container">
+            <p>Write your comments or suggestions below:</p>
+            <textarea
+              id="textarea"
+              class="textarea"
+              name="comment"
+              placeholder="Enter your comment here.."
+            ></textarea>
+          </div>
+
+          <div class="input-container">
+            <button type="submit" id="submit" class="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
